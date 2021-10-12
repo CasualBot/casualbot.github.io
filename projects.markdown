@@ -13,7 +13,7 @@ permalink: /projects/
     {% endif %}
     <div class="container">
         {% if project.hyperlink %}
-            <h3 class="title"><a href="{{project.hyperlink}}" target="_blank">{{ project.title }}</a></h3>
+            <h3 class="title"><a href="{{project.url}}">{{ project.title }}</a></h3>
         {% else %}
             <h3 class="title">{{ project.title }}</h3>
         {% endif %} 
@@ -55,11 +55,10 @@ permalink: /projects/
 }
 .card-img {
     max-height: 80%;
-    height: 80%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    height: 100%;
     justify-content: center;
     vertical-align: middle;
+    object-fit: cover;
 }
 .fill {
     width:100% !important;
