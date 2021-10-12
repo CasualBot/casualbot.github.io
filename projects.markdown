@@ -41,6 +41,9 @@ permalink: /projects/
     justify-content: left;
     margin: 15px;
 }
+.card:hover {
+    outline: 1px solid #800000;
+}
 .container {
     background-color: #fdfdfd;
 }
@@ -49,8 +52,8 @@ permalink: /projects/
 }
 .container {
     padding: 2px 16px;
-    height: 25%;
-    min-height: 25%;
+    height: 20%;
+    min-height: 20%;
     border-top: 1px solid #414a4c;
 }
 .card-img {

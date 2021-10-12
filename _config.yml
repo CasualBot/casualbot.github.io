@@ -19,7 +19,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Shawn Bernard DEV
+title: Shawn Bernard
+tagline: If the 🐶 from "Up 🎈" was a person
 description: >- # this means to ignore newlines until "baseurl:"
   Hi! I'm Shawn, I make things on the internet.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -30,10 +31,11 @@ github_username:  casualbot
 contact_email: ""
 
 # Build settings
-theme: minima
+# theme: jekyll-theme-hydure
 plugins:
   - jekyll-feed
-
+  - jekyll-remote-theme
+remote_theme: zivong/jekyll-theme-hydure
 defaults:
   - scope:
       path: "assets/img"
@@ -42,8 +44,6 @@ defaults:
 
 collections:
   projects:
-    output: true
-  posts:
     output: true
 # Exclude from processing.
 # The following items will not be processed, by default.
