@@ -3,10 +3,13 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
+<div class="card-container">
 {% for project in site.projects %}
 <div class="card" style="background-color:#{{project.card-color}}">
     {% if project.image_url %}
         <img class="card-img" src="{{ project.image_url }}" alt="Project Image"  />
+    {% else %}
+        <div class="card-img">    </div>
     {% endif %}
     <div class="container">
         {% if project.hyperlink %}
@@ -21,16 +24,23 @@ permalink: /projects/
   <!-- <p>{{ proj.content | markdownify }}</p> -->
 </div>
 {% endfor %}
+</div>
 <style>
+.card-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 250px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: left;
+    margin: 15px;
 }
-
 .container {
     background-color: #fdfdfd;
 }
@@ -40,8 +50,8 @@ permalink: /projects/
 .container {
     padding: 2px 16px;
     height: 25%;
+    min-height: 25%;
     border-top: 1px solid #414a4c;
-
 }
 .card-img {
     max-height: 80%;
@@ -52,6 +62,9 @@ permalink: /projects/
     vertical-align: middle;
 }
 .fill {
-    width:100% !important
+    width:100% !important;
+}
+.page-content > .wrapper {
+    max-width: calc(1200px - (30px * 2)) !important;   
 }
 </style>
