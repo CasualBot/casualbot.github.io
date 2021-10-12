@@ -27,6 +27,7 @@ url: "https://casualbot.github.io" # the base hostname & protocol for your site,
 domain: casualbot.github.io
 twitter_username: thepyro_tv
 github_username:  casualbot
+contact_email: ""
 
 # Build settings
 theme: minima
