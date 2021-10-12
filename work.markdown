@@ -1,6 +1,7 @@
 ---
 title: 📋 Work History 
 layout: page
+permalink: /work/
 ---
 ## [Ubisoft Winnipeg](https://winnipeg.ubisoft.com/)
 ### 📅 March 2021 - Present
