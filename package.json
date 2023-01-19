@@ -1,0 +1,31 @@
+{
+  "name": "casualbot.github.io",
+  "version": "1.0.0",
+  "description": "A vuepress project",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CasualBot/casualbot.github.io.git"
+  },
+  "keywords": [
+    "vuepress",
+    "blog"
+  ],
+  "author": "Shawn Bernard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CasualBot/casualbot.github.io/issues"
+  },
+  "homepage": "https://github.com/CasualBot/casualbot.github.io#readme",
+  "devDependencies": {
+    "vuepress": "2.0.0-beta.60",
+    "@vuepress/client": "2.0.0-beta.60",
+    "vue": "^3.2.45",
+    "vuepress-theme-hope": "2.0.0-beta.165"
+  }
+}
